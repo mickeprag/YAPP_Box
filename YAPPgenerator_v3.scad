@@ -5535,16 +5535,16 @@ module displayMount(
             color("blue")
             {
               //--pins
-              translate([pinInsetH,pinInsetV,walltoPCBGap+lidPlaneThickness])
+              translate([pinInsetH,pinInsetV,walltoPCBGap+wallThickness])
                 cylinder (d=pinDiameter, h=pcbThickness*2);
 
-              translate([pinInsetH,displayHeight-pinInsetV,walltoPCBGap+lidPlaneThickness])
+              translate([pinInsetH,displayHeight-pinInsetV,walltoPCBGap+wallThickness])
                 cylinder (d=pinDiameter, h=pcbThickness*2);
 
-              translate([displayWidth-pinInsetH,pinInsetV,walltoPCBGap+lidPlaneThickness])
+              translate([displayWidth-pinInsetH,pinInsetV,walltoPCBGap+wallThickness])
                 cylinder (d=pinDiameter, h=pcbThickness*2);
 
-              translate([displayWidth-pinInsetH,displayHeight-pinInsetV,walltoPCBGap+lidPlaneThickness])
+              translate([displayWidth-pinInsetH,displayHeight-pinInsetV,walltoPCBGap+wallThickness])
                 cylinder (d=pinDiameter, h=pcbThickness*2);
             }// color
           } // not Self Threading
